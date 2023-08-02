@@ -1,0 +1,12 @@
+.second{
+	color:#ccfccc;
+}
+
+.three{
+	color:#d3e2f4;
+}
+
+td:hover{
+	text-decoration:underline;
+	color:#f56e6e;
+}

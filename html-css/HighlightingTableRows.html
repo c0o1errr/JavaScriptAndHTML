@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>Example</title>
+ <script>
+		function setHandler() {
+            var cells = document.querySelectorAll('tr');
+            for (var i = 0; i < cells.length; i++) {
+                cells[i].onclick = function(event){
+					for(var j = 0; j < cells.length; j++) {
+						cells[j].style.background = 'white';
+					}
+					event.currentTarget.style.background = 'silver';
+					
+				}
+            }
+        }
+        window.onload = setHandler;
+    </script>
+<style>
+        table{
+            text-align: center;
+        }
+		
+		.greenText {
+			background-color: gold;
+		}
+</style>
+</head>
+<body>
+<table border="3px" width="100%">
+    <tr>
+        <th>Абитуриент</th>
+        <th>Математика</th>
+        <th>Русский язык</th>
+        <th>Информатика</th>
+        <th>Дополнительные баллы</th>
+    </tr>
+    <tr>
+        <td>Иванов И.И.</td>
+        <td>85</td>
+        <td>73</td>
+        <td>78</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Петров П.П.</td>
+        <td>66</td>
+        <td>89</td>
+        <td>66</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Григорьев А.В.</td>
+        <td>100</td>
+        <td>65</td>
+        <td>88</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>Иванов Б.В.</td>
+        <td>73</td>
+        <td>89</td>
+        <td>70</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Котлов У.А.</td>
+        <td>100</td>
+        <td>55</td>
+        <td>100</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Сидоров С.С.</td>
+        <td>65</td>
+        <td>65</td>
+        <td>65</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>Урусов И.А.</td>
+        <td>70</td>
+        <td>65</td>
+        <td>68</td>
+        <td>3</td>
+    </tr>
+</table>
+</body>
+</html>

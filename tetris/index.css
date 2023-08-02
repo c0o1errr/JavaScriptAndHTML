@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#root {
+    padding: 3rem;
+    text-align: center
+}
+
+#root canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.main{
+    width: 316px;
+    height: 630px;
+    margin: -100px auto 0;
+    border: 5px solid slategrey;
+    font-size: 0;
+} 
+
+.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid slategray;
+    display: inline-block;
+}
+
+.movingCell {
+    background-color: aquamarine;
+}
+
+.fixedCell {
+    background-color: cornflowerblue;
+}
